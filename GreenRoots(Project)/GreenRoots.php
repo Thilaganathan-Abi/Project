@@ -163,7 +163,7 @@
     </tr>
 
     <?php
-    $conn = mysqli_connect("localhost", "root", "", "mydb");
+    $conn = mysqli_connect("127.0.0.1:3306", "root", "mariadb", "mydb");
 
     $sql = "SELECT * FROM users";
 
