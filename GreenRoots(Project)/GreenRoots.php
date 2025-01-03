@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Font file link-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <!--Custom css file link-->
     <link rel="stylesheet" href="style.css">
 
@@ -44,6 +44,7 @@
             <div class="content_middle">
                <div class="hero_img"><img src="./img/image1.jpg" alt="plant"></div>
                <button class="cir_btn"><span class="cir_btn-txt">Let's Start<i class="ri-arrow-right-up-line"></i></span></button>
+
             </div>
       
             <div class="content_right">
@@ -54,87 +55,10 @@
                   <div class="inner_content">
                      <p>Volunteer</p>
                      <h3>Let's Contribute <br>To A Healthy<br>Environment.</h3>
-                     <button class="inner_btn">
-                        <span class="inner_btn-txt">Login</span>
-                     </button>
                   </div>
                   </div>
             </div>
         </div>
-
-
-        
-  
-        <div class="wrapper">
-            <span class="icon-close">
-               <ion-icon name="close"></ion-icon>
-           </span>
-           <div class="from-boxlogin">
-               <h2>Login</h2>
-               <form action="#">
-                   <div class="input-box">
-                       <span class="icon">
-                           <ion-icon name="mail"></ion-icon>
-                       </span>
-                           <input type="email" required>
-                           <label>Eamil</label>
-                   </div>
-                   <div class="input-box">
-                       <span class="icon">
-                           <ion-icon name="lock-closed"></ion-icon>
-                       </span>
-                       <input type="password" required>
-                       <label>password</label>
-                   </div>
-                       <div class="remember-forgot">
-                        <label><input type="checkbox"> Remember me</label>
-                        <a href="#">Forgot Password?</a>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                    <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-         </div>
-
-       
-        <div class="from-boxRegister">
-         <h2>Registration</h2>
-         <form action="#">
-             <div class="input-box">
-                 <span class="icon">
-                     <ion-icon name="person"></ion-icon>
-                 </span>
-                     <input type="text" required>
-                     <label>Username</label>
-             </div>
-             <div class="input-box">
-                 <span class="icon">
-                     <ion-icon name="mail"></ion-icon>
-                 </span>
-                     <input type="email" required>
-                     <label>Eamil</label>
-             </div>
-             <div class="input-box">
-                 <span class="icon">
-                     <ion-icon name="lock-closed"></ion-icon>
-                 </span>
-                 <input type="password" required>
-                 <label>password</label>
-                 </div>
-                 <div class="remember-forgot">
-                     <label><input type="checkbox"> I agree to the terms & conditions
-                     </label>
-                     </div>
-                 <button type="submit" class="btn">Register</button>
-                 <div class="login-register">
-                 <p>Already have an account? 
-                     <a href="#" class="login-link">Login</a></p>
-                 </div>
-         </form>
-         
-     </div>
- </div>
     </section>
 
 
@@ -177,8 +101,8 @@
        <p>planting trees helps improve air quality, reduce carbon dioxide, conserve water, and support wildlife.
           It contributes positively to the ecosystem and promotes sustainability.</p>
           <button class="nav_btn">
-          <span class="nav_btn-txt">Read more</span>
-       </button>
+         <span class="nav_btn-txt">Read more</span>
+      </button>
    </div>
  </div>
  
@@ -190,34 +114,87 @@
     <h2>Maintain</h2>
     <p>Maintaining trees involves watering, pruning, and protecting them from pests to ensure healthy growth.</p>
     <button class="nav_btn">
-       <span class="nav_btn-txt">Read more</span>
-    </button>
+         <span class="nav_btn-txt">Read more</span>
+      </button>
  </div>
  </div>
  </section>
- <!--Contact-->
- <section id="Contact" class="Contact">
-    <h1 class="heading">Contact Us</h1>
- 
-    <div class="row">
-        <div class="images">
-            <img src="./img/image8.png" alt="">
-        </div>
-        <div class="form-container">
-            <form action="">
-                <!-- form name -->
-                <div class="inputbox">
-                    <input type="text" placeholder="First Name" name="" id="">
-                <input type="text" placeholder="Last Name" name="" id="">
-                </div>
- 
-                <!-- form email & text area  -->
-                <input type="email" placeholder="Enter your email" name="" id="">
-                <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </div>
+
+
+ <section id = "Contact" class = "Contact">
+   <h1 class="heading">Register</h1>
+
+   <div class = "row">
+      <div class="images">
+      <img src="./img/image8.png" alt="">
+      </div>
+      <div class="form-container">
+      <form method = "POST" action = "insert.php">
+         <label>Name:</label><br>
+         <input type="text" name="name" required><br>
+         
+         <label>Email:</label><br>
+         <input type="email" name="email" required><br>
+
+         <label>Age:</label><br>
+         <input type="number" name="age" required><br>
+
+         <label>Phone Number:</label><br>
+         <input type="text" name="number" required><br><br>
+
+         <button class="nav_btn">
+         <span class="nav_btn-txt">Submit</span>
+      </button>
+
+         <!--<input type="submit" value="Submit">-->
+      </form>
+
+
+
+      <h3>User Records</h3>
+      <table border="1.5" >
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Phone Number</th>
+        <th>Action</th>
+    </tr>
+
+    <?php
+    $conn = mysqli_connect("localhost", "root", "", "mydb");
+
+    $sql = "SELECT * FROM users";
+
+    $result = mysqli_query($conn,$sql);
+
+    $resultcheck = mysqli_num_rows($result);
+
+    if($resultcheck>0)
+    {
+        while($row = mysqli_fetch_assoc($result))
+        {
+            echo "
+            <tr>
+                <td>{$row['id']}</td>
+                <td>{$row['name']}</td>
+                <td>{$row['email']}</td>
+                <td>{$row['age']}</td>
+                <td>{$row['number']}</td>
+                <td>
+                    <a href='edit.php?id={$row['id']}'>Edit</a> |
+                    <a href='delete.php?id={$row['id']}'>Delete</a>
+                </td>
+            </tr>
+            "; 
+        }
+    
+    }
+    ?>
+</table>
+   </div>
+   </div>
  </section>
 
 
@@ -233,7 +210,7 @@
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!--Custom js file link-->
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
