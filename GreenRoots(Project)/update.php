@@ -16,5 +16,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Error: " . $conn->error;
     }
 }
-header("Location: GreenRoots.php");
+//header("Location: GreenRoots.php");
 ?>
