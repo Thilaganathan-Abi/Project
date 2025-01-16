@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("127.0.0.1:3306", "root", "mariadb", "mydb");
+$conn = mysqli_connect("127.0.0.1:3306", "root", "mariadb", "tree");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
