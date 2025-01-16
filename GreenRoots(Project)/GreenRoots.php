@@ -152,6 +152,7 @@
 
 
       <h3>User Records</h3>
+      <!--<table style="width: 100%; border-collapse: collapse;">-->
       <table border="1.5" >
     <tr>
         <th>ID</th>
@@ -177,7 +178,7 @@
         {
             echo "
             <tr>
-                <td>{$row['id']}</td>
+                <td >{$row['id']}</td>
                 <td>{$row['name']}</td>
                 <td>{$row['email']}</td>
                 <td>{$row['age']}</td>
